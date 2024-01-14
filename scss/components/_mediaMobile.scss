@@ -1,0 +1,144 @@
+@media (max-width: 768px){
+    .mainGrid{
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(2, 1fr);
+     flex-wrap: wrap;
+     height: calc(100vw * 5 / 4);
+     #batidos{
+        background-size: 100% calc(100vw * 2.5 / 4);
+        height: calc(100vw * 2.5 / 4);
+    }
+    #gluten{
+        padding-top: 10px;
+        background-size: 100%;
+    }
+    }
+    
+
+    .divCard{
+        flex-wrap: wrap;
+    }
+
+    .mainMenu{height: auto;
+        display: grid;
+        grid-template-columns:repeat(1,auto);
+        grid-template-rows: repeat(7,auto);
+        gap: 10px 5px;
+        grid-template-areas: 
+        "menu"
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+        "section5"
+        "section5";
+        flex-wrap: wrap;
+        .menu{
+            text-decoration: underline;
+            grid-area: menu;
+            flex-grow: 1;
+        }
+        .section5{
+            height: auto;
+    
+            article{
+                p{
+                    height: auto;
+                }
+            }
+        }
+    }
+    main{
+        .section1{
+       
+            grid-area: section1;
+            article{
+                padding: 5px;
+                border: 1px solid $colorb;
+                border-radius: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        }
+        .section2{
+            grid-area: section2;
+            article{
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: 5px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        }
+        .section3{
+            grid-area: section3;
+            article{
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: 5px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        }
+        .section4{
+            
+            grid-area: section4;
+            article{
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: 5px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        }
+        
+        .section5{
+            grid-area: section5;
+            article{
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: 5px;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    height: auto;
+                    text-align: center;
+                }
+            }
+        
+        }
+    }
+
+
+ }
